@@ -1,0 +1,23 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: bb0352b4a56060bb9cbcd9aaec9fad302786e719a07db49fd471336ef658f0aa
+
+name:           hie-reload-example
+version:        0.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Bar
+      Foo
+  other-modules:
+      Paths_hie_reload_example
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+  default-language: Haskell2010
