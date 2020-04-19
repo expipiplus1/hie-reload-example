@@ -1,3 +1,10 @@
+In this project, module `Foo` uses a TH splice (defined in `Bar`) which calls
+`reify 'id` twice and writes the results to a file.
+
+When hie-bios is compiled with the haskell.nix infrastructure, it causes `reify
+'id` to return a garbage type (`forall a. b -> c`). This doesn't happen when
+hie-bios is compiled with the nixpkgs haskell infrastructure or with Cabal.
+
 ## To reproduce
 
 - Correct the path to `idInfo` in src/Bar.hs
