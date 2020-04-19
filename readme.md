@@ -3,7 +3,10 @@ In this project, module `Foo` uses a TH splice (defined in `Bar`) which calls
 
 When hie-bios is compiled with the haskell.nix infrastructure, it causes `reify
 'id` to return a garbage type (`forall a. b -> c`). This doesn't happen when
-hie-bios is compiled with the nixpkgs haskell infrastructure or with Cabal.
+hie-bios is compiled with the nixpkgs haskell infrastructure.
+
+If one checks out hie-bios and compiles with Cabal in a nix-shell provided by
+haskell.nix's `shellFor` the incorrect behavior occurs too.
 
 ## To reproduce
 
