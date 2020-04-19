@@ -1,6 +1,7 @@
+{-# language TemplateHaskell #-}
 module Foo
   where
 
 import Bar
 
-foo = () 1
+idInfo

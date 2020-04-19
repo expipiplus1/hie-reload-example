@@ -1,5 +1,6 @@
 dependencies:
   - base
+  - template-haskell
 
 library:
   source-dirs: src

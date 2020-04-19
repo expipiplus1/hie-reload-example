@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: bb0352b4a56060bb9cbcd9aaec9fad302786e719a07db49fd471336ef658f0aa
+-- hash: b834b10c9976e885c85d3619af31dcb1d53bb4e70f035c011d036a7733150c9a
 
 name:           hie-reload-example
 version:        0.0.0
@@ -20,4 +20,5 @@ library
       src
   build-depends:
       base
+    , template-haskell
   default-language: Haskell2010
