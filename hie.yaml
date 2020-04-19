@@ -1,2 +1,4 @@
 cradle:
-  cabal:
+  direct:
+    arguments:
+      - -isrc
