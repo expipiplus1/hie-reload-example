@@ -1,7 +1,13 @@
 ## To reproduce
 
 - Correct the path to `idInfo` in src/Bar.hs
-- run 'hie src/Foo.hs'
+- Build hie-bios using the nixpkgs infrastructure
+    - `nix-build hie-bios-nixpkgs.nix`
+- run './result/bin/hie-bios check src/Foo.hs'
+- Observe that the values in `idInfo` are correct
+- Build hie-bios using the haskell.nix infrastructure
+    - `nix-build hie-bios-haskell.nix.nix`
+- run './result/bin/hie-bios check src/Foo.hs'
 - Observe that the `idInfo` file contains two different and incorrect infos for `'id`
 
     ```haskell

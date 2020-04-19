@@ -10,5 +10,5 @@ idInfo = do
   idInfo1 <- reify 'id
   idInfo2 <- reify 'id
   runIO $ writeFile "/home/j/projects/bugs/hie-reload-example/idInfo"
-                    (unlines (fmap show [idInfo1, idInfo2]))
+                    (unlines [show idInfo1, show idInfo2, show (idInfo1 == idInfo2)])
   pure []
